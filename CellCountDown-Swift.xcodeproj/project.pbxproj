@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59B2D91C1BC54A4C264D03E3 /* Pods_CellCountDown_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972B6A7BA0EEFF7F966C0F9A /* Pods_CellCountDown_Swift.framework */; };
 		6A48CE271FB1A8330047E511 /* OYTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A48CE261FB1A8330047E511 /* OYTopViewController.swift */; };
 		6A48CE291FB1A95C0047E511 /* OYSingleTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A48CE281FB1A95C0047E511 /* OYSingleTableVC.swift */; };
 		6A48CE2B1FB1B08A0047E511 /* OYTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A48CE2A1FB1B08A0047E511 /* OYTableViewCell.swift */; };
@@ -19,6 +20,12 @@
 		6A8069471FB185050089986E /* CellCountDown_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8069461FB185050089986E /* CellCountDown_SwiftTests.swift */; };
 		6A8069521FB185050089986E /* CellCountDown_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8069511FB185050089986E /* CellCountDown_SwiftUITests.swift */; };
 		6A8069601FB185890089986E /* OYCountDownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A80695F1FB185890089986E /* OYCountDownManager.swift */; };
+		6A8A6FED1FBABD0B0042B1AA /* OYMultipleTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A6FEC1FBABD0B0042B1AA /* OYMultipleTableVC.swift */; };
+		6A8A6FEF1FBAC7430042B1AA /* OYMultiplePageOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A6FEE1FBAC7430042B1AA /* OYMultiplePageOneVC.swift */; };
+		6A8A6FF11FBAC87B0042B1AA /* OYMultiplePageTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A6FF01FBAC87B0042B1AA /* OYMultiplePageTwoVC.swift */; };
+		6A8A6FF31FBADDE30042B1AA /* OYPagingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A6FF21FBADDE30042B1AA /* OYPagingTableVC.swift */; };
+		9E2B1A65E5521227724C718B /* Pods_CellCountDown_SwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F897CD2758E1250634585143 /* Pods_CellCountDown_SwiftTests.framework */; };
+		E047CEE011A3DF6B35B9AA89 /* Pods_CellCountDown_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733C1EAF66ADB6229B079B84 /* Pods_CellCountDown_SwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06B5794DD5CB5BD3DC750083 /* Pods-CellCountDown-SwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CellCountDown-SwiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CellCountDown-SwiftUITests/Pods-CellCountDown-SwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3957C37E2FD1B6764E7FD8A3 /* Pods-CellCountDown-SwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CellCountDown-SwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CellCountDown-SwiftTests/Pods-CellCountDown-SwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A48CE261FB1A8330047E511 /* OYTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OYTopViewController.swift; sourceTree = "<group>"; };
 		6A48CE281FB1A95C0047E511 /* OYSingleTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OYSingleTableVC.swift; sourceTree = "<group>"; };
 		6A48CE2A1FB1B08A0047E511 /* OYTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OYTableViewCell.swift; sourceTree = "<group>"; };
@@ -57,6 +66,18 @@
 		6A8069511FB185050089986E /* CellCountDown_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCountDown_SwiftUITests.swift; sourceTree = "<group>"; };
 		6A8069531FB185050089986E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A80695F1FB185890089986E /* OYCountDownManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OYCountDownManager.swift; sourceTree = "<group>"; };
+		6A8A6FEC1FBABD0B0042B1AA /* OYMultipleTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OYMultipleTableVC.swift; sourceTree = "<group>"; };
+		6A8A6FEE1FBAC7430042B1AA /* OYMultiplePageOneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OYMultiplePageOneVC.swift; sourceTree = "<group>"; };
+		6A8A6FF01FBAC87B0042B1AA /* OYMultiplePageTwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OYMultiplePageTwoVC.swift; sourceTree = "<group>"; };
+		6A8A6FF21FBADDE30042B1AA /* OYPagingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OYPagingTableVC.swift; sourceTree = "<group>"; };
+		6A8A70121FBAE3870042B1AA /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+		733C1EAF66ADB6229B079B84 /* Pods_CellCountDown_SwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CellCountDown_SwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E41F35D573CA831AF900175 /* Pods-CellCountDown-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CellCountDown-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-CellCountDown-Swift/Pods-CellCountDown-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		972B6A7BA0EEFF7F966C0F9A /* Pods_CellCountDown_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CellCountDown_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D28B978FC3A971FB3181C7EF /* Pods-CellCountDown-SwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CellCountDown-SwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CellCountDown-SwiftUITests/Pods-CellCountDown-SwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F897CD2758E1250634585143 /* Pods_CellCountDown_SwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CellCountDown_SwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9DA963CF3A35E79D2E1208C /* Pods-CellCountDown-SwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CellCountDown-SwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CellCountDown-SwiftTests/Pods-CellCountDown-SwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		FAEB5899182F88A8245308F4 /* Pods-CellCountDown-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CellCountDown-Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CellCountDown-Swift/Pods-CellCountDown-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B2D91C1BC54A4C264D03E3 /* Pods_CellCountDown_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E2B1A65E5521227724C718B /* Pods_CellCountDown_SwiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,17 +101,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E047CEE011A3DF6B35B9AA89 /* Pods_CellCountDown_SwiftUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C9F4D45B3986840EA80E216 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				972B6A7BA0EEFF7F966C0F9A /* Pods_CellCountDown_Swift.framework */,
+				F897CD2758E1250634585143 /* Pods_CellCountDown_SwiftTests.framework */,
+				733C1EAF66ADB6229B079B84 /* Pods_CellCountDown_SwiftUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6A48CE251FB1A7890047E511 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				6A48CE261FB1A8330047E511 /* OYTopViewController.swift */,
 				6A48CE281FB1A95C0047E511 /* OYSingleTableVC.swift */,
+				6A8A6FEC1FBABD0B0042B1AA /* OYMultipleTableVC.swift */,
+				6A8A6FEE1FBAC7430042B1AA /* OYMultiplePageOneVC.swift */,
+				6A8A6FF01FBAC87B0042B1AA /* OYMultiplePageTwoVC.swift */,
+				6A8A6FF21FBADDE30042B1AA /* OYPagingTableVC.swift */,
 				6A48CE2A1FB1B08A0047E511 /* OYTableViewCell.swift */,
 				6A48CE2C1FB1B0970047E511 /* OYModel.swift */,
 			);
@@ -102,6 +140,8 @@
 				6A8069451FB185050089986E /* CellCountDown-SwiftTests */,
 				6A8069501FB185050089986E /* CellCountDown-SwiftUITests */,
 				6A80692F1FB185040089986E /* Products */,
+				CE42CA782307A1C69F75A385 /* Pods */,
+				1C9F4D45B3986840EA80E216 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +161,7 @@
 				6A8069311FB185040089986E /* AppDelegate.swift */,
 				6A8069331FB185040089986E /* ViewController.swift */,
 				6A80695F1FB185890089986E /* OYCountDownManager.swift */,
+				6A8A70121FBAE3870042B1AA /* BridgeHeader.h */,
 				6A48CE251FB1A7890047E511 /* Classes */,
 				6A8069351FB185040089986E /* Main.storyboard */,
 				6A8069381FB185040089986E /* Assets.xcassets */,
@@ -148,6 +189,19 @@
 			path = "CellCountDown-SwiftUITests";
 			sourceTree = "<group>";
 		};
+		CE42CA782307A1C69F75A385 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB5899182F88A8245308F4 /* Pods-CellCountDown-Swift.debug.xcconfig */,
+				7E41F35D573CA831AF900175 /* Pods-CellCountDown-Swift.release.xcconfig */,
+				3957C37E2FD1B6764E7FD8A3 /* Pods-CellCountDown-SwiftTests.debug.xcconfig */,
+				F9DA963CF3A35E79D2E1208C /* Pods-CellCountDown-SwiftTests.release.xcconfig */,
+				D28B978FC3A971FB3181C7EF /* Pods-CellCountDown-SwiftUITests.debug.xcconfig */,
+				06B5794DD5CB5BD3DC750083 /* Pods-CellCountDown-SwiftUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,9 +209,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A8069561FB185050089986E /* Build configuration list for PBXNativeTarget "CellCountDown-Swift" */;
 			buildPhases = (
+				9A1B20A09692760680E48E7A /* [CP] Check Pods Manifest.lock */,
 				6A80692A1FB185040089986E /* Sources */,
 				6A80692B1FB185040089986E /* Frameworks */,
 				6A80692C1FB185040089986E /* Resources */,
+				1A7936DE753900CBB7F8CDE5 /* [CP] Embed Pods Frameworks */,
+				57F3993D84EE957B84A7E479 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,9 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A8069591FB185050089986E /* Build configuration list for PBXNativeTarget "CellCountDown-SwiftTests" */;
 			buildPhases = (
+				8B58C0506025C8A6CFEF3A5F /* [CP] Check Pods Manifest.lock */,
 				6A80693E1FB185040089986E /* Sources */,
 				6A80693F1FB185040089986E /* Frameworks */,
 				6A8069401FB185040089986E /* Resources */,
+				15ABADB1AF5FDEA8D4CD9FD5 /* [CP] Embed Pods Frameworks */,
+				72DF70B91DE252849BD24783 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,9 +250,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A80695C1FB185050089986E /* Build configuration list for PBXNativeTarget "CellCountDown-SwiftUITests" */;
 			buildPhases = (
+				A1D09527570402C878261493 /* [CP] Check Pods Manifest.lock */,
 				6A8069491FB185050089986E /* Sources */,
 				6A80694A1FB185050089986E /* Frameworks */,
 				6A80694B1FB185050089986E /* Resources */,
+				5B424B0230E52832F1237715 /* [CP] Embed Pods Frameworks */,
+				C85CEF7AA375F87ABBF93671 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,6 +279,7 @@
 				TargetAttributes = {
 					6A80692D1FB185040089986E = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					6A8069411FB185040089986E = {
@@ -277,6 +341,144 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		15ABADB1AF5FDEA8D4CD9FD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CellCountDown-SwiftTests/Pods-CellCountDown-SwiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A7936DE753900CBB7F8CDE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CellCountDown-Swift/Pods-CellCountDown-Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57F3993D84EE957B84A7E479 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CellCountDown-Swift/Pods-CellCountDown-Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B424B0230E52832F1237715 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CellCountDown-SwiftUITests/Pods-CellCountDown-SwiftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72DF70B91DE252849BD24783 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CellCountDown-SwiftTests/Pods-CellCountDown-SwiftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B58C0506025C8A6CFEF3A5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9A1B20A09692760680E48E7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A1D09527570402C878261493 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C85CEF7AA375F87ABBF93671 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CellCountDown-SwiftUITests/Pods-CellCountDown-SwiftUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6A80692A1FB185040089986E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -285,10 +487,14 @@
 				6A48CE2D1FB1B0970047E511 /* OYModel.swift in Sources */,
 				6A8069601FB185890089986E /* OYCountDownManager.swift in Sources */,
 				6A48CE2B1FB1B08A0047E511 /* OYTableViewCell.swift in Sources */,
+				6A8A6FF31FBADDE30042B1AA /* OYPagingTableVC.swift in Sources */,
+				6A8A6FEF1FBAC7430042B1AA /* OYMultiplePageOneVC.swift in Sources */,
 				6A8069341FB185040089986E /* ViewController.swift in Sources */,
 				6A48CE271FB1A8330047E511 /* OYTopViewController.swift in Sources */,
 				6A48CE291FB1A95C0047E511 /* OYSingleTableVC.swift in Sources */,
 				6A8069321FB185040089986E /* AppDelegate.swift in Sources */,
+				6A8A6FF11FBAC87B0042B1AA /* OYMultiplePageTwoVC.swift in Sources */,
+				6A8A6FED1FBABD0B0042B1AA /* OYMultipleTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,34 +658,46 @@
 		};
 		6A8069571FB185050089986E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAEB5899182F88A8245308F4 /* Pods-CellCountDown-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "CellCountDown-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.herob.CellCountDown-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CellCountDown-Swift/BridgeHeader.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
 		6A8069581FB185050089986E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E41F35D573CA831AF900175 /* Pods-CellCountDown-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "CellCountDown-Swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.herob.CellCountDown-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CellCountDown-Swift/BridgeHeader.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};
 		6A80695A1FB185050089986E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3957C37E2FD1B6764E7FD8A3 /* Pods-CellCountDown-SwiftTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -496,6 +714,7 @@
 		};
 		6A80695B1FB185050089986E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9DA963CF3A35E79D2E1208C /* Pods-CellCountDown-SwiftTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +731,7 @@
 		};
 		6A80695D1FB185050089986E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D28B978FC3A971FB3181C7EF /* Pods-CellCountDown-SwiftUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +747,7 @@
 		};
 		6A80695E1FB185050089986E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B5794DD5CB5BD3DC750083 /* Pods-CellCountDown-SwiftUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

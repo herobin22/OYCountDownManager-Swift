@@ -1,28 +1,32 @@
 //
-//  OYSingleTableVC.swift
+//  OYMultiplePageTwoVC.swift
 //  CellCountDown-Swift
 //
-//  Created by Gold on 2017/11/7.
+//  Created by Gold on 2017/11/14.
 //  Copyright © 2017年 herob. All rights reserved.
 //
 
 import UIKit
 
-class OYSingleTableVC: UIViewController {
-    
+fileprivate let OYMultiplePageSource2 = "OYMultiplePageSource2"
+
+class OYMultiplePageTwoVC: UIViewController {
+
     private var tableView: UITableView!
     private var dataSource: [OYModel]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.title = "单个列表倒计时"
+        
+        self.tabBarController?.title = "页面2倒计时";
         self.view.backgroundColor = UIColor.white
         self.getDate()
         self.setupUI()
-   
+        
         // 启动倒计时管理
         OYCountDownManager.sharedManager.start()
+        // 增加倒计时源
+        OYCountDownManager.sharedManager.addSourceWithIdentifier(identifier: OYMultiplePageSource2)
     }
     
     private func setupUI() {
@@ -31,7 +35,7 @@ class OYSingleTableVC: UIViewController {
         tableView.dataSource = self
         tableView.register(OYTableViewCell.classForCoder(), forCellReuseIdentifier: OYTableViewCellID)
         tableView.refreshControl = UIRefreshControl()
-        tableView.refreshControl?.addTarget(self, action: #selector(OYSingleTableVC.reloadData), for: .valueChanged)
+        tableView.refreshControl?.addTarget(self, action: #selector(OYMultiplePageTwoVC.reloadData), for: .valueChanged)
         view.addSubview(tableView)
     }
     
@@ -52,14 +56,14 @@ class OYSingleTableVC: UIViewController {
             self.tableView.refreshControl?.endRefreshing()
         }
     }
-
+    
     deinit {
         OYCountDownManager.sharedManager.invalidate()
         OYCountDownManager.sharedManager.reload()
     }
 }
 
-extension OYSingleTableVC: UITableViewDelegate, UITableViewDataSource {
+extension OYMultiplePageTwoVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.dataSource.count
     }
@@ -69,7 +73,7 @@ extension OYSingleTableVC: UITableViewDelegate, UITableViewDataSource {
         cell.countDownZero = {
             (timeOutModel: OYModel) -> Void in
             if !timeOutModel.timeOut{
-                print("SingleTableVC--\(timeOutModel.title!)--时间到了")
+                print("MultiplePageTwoVC--\(timeOutModel.title!)--时间到了")
             }
             timeOutModel.timeOut = true
         }
@@ -79,3 +83,4 @@ extension OYSingleTableVC: UITableViewDelegate, UITableViewDataSource {
         return 50
     }
 }
+

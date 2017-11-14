@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -113,7 +114,7 @@
         <!--Multiple Page OneVC-->
         <scene sceneID="3N1-WZ-c97">
             <objects>
-                <viewController id="KLd-vK-WSM" customClass="OYMultiplePageOneVC" sceneMemberID="viewController">
+                <viewController id="KLd-vK-WSM" customClass="OYMultiplePageOneVC" customModule="CellCountDown_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oli-DD-4RO"/>
                         <viewControllerLayoutGuide type="bottom" id="Y8M-Xm-1jw"/>
@@ -133,7 +134,7 @@
         <!--页面2-->
         <scene sceneID="ZR9-pT-EyA">
             <objects>
-                <viewController title="页面2" id="GhL-Fh-wrO" customClass="OYMultiplePageTwoVC" sceneMemberID="viewController">
+                <viewController title="页面2" id="GhL-Fh-wrO" customClass="OYMultiplePageTwoVC" customModule="CellCountDown_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WWA-DL-eTx"/>
                         <viewControllerLayoutGuide type="bottom" id="oB7-se-l3C"/>

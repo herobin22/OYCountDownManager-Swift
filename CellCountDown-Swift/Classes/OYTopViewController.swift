@@ -26,9 +26,11 @@ class OYTopViewController: UIViewController {
     }
  
     @IBAction func mutipleTableBtnClick(_ sender: Any) {
+        self.navigationController?.pushViewController(OYMultipleTableVC(), animated: true)
     }
     
     @IBAction func pagingTableBtnClick(_ sender: Any) {
+        self.navigationController?.pushViewController(OYPagingTableVC(), animated: true)
     }
     
 }
