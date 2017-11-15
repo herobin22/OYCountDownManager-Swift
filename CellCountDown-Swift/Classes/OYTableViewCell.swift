@@ -41,9 +41,9 @@ class OYTableViewCell: UITableViewCell {
         let model = self.model!
         let timeInterval: Int
         if model.countDownSource == nil {
-            timeInterval = OYCountDownManager.sharedManager.timeInterval
+            timeInterval = OYCountDownManager_swift.sharedManager.timeInterval
         }else {
-            timeInterval = OYCountDownManager.sharedManager.timeIntervalWithIdentifier(identifier: model.countDownSource!)
+            timeInterval = OYCountDownManager_swift.sharedManager.timeIntervalWithIdentifier(identifier: model.countDownSource!)
         }
         let countDown = model.count - timeInterval
         // 当倒计时到了进行回调

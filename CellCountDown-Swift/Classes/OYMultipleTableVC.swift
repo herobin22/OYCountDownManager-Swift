@@ -28,10 +28,10 @@ class OYMultipleTableVC: UIViewController {
         self.setupUI()
         
         // 启动倒计时管理
-        OYCountDownManager.sharedManager.start()
+        OYCountDownManager_swift.sharedManager.start()
         // 增加倒计时源
-        OYCountDownManager.sharedManager.addSourceWithIdentifier(identifier: OYMultipleTableSource1)
-        OYCountDownManager.sharedManager.addSourceWithIdentifier(identifier: OYMultipleTableSource2)
+        OYCountDownManager_swift.sharedManager.addSourceWithIdentifier(identifier: OYMultipleTableSource1)
+        OYCountDownManager_swift.sharedManager.addSourceWithIdentifier(identifier: OYMultipleTableSource2)
     }
 
     private func setupUI() {
@@ -64,7 +64,7 @@ class OYMultipleTableVC: UIViewController {
     @objc private func reloadData() -> Void {
         getDate()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            OYCountDownManager.sharedManager.reload()
+            OYCountDownManager_swift.sharedManager.reload()
             self.tableView.reloadData()
             self.tableView.refreshControl?.endRefreshing()
         }
@@ -82,15 +82,15 @@ class OYMultipleTableVC: UIViewController {
     @objc private func reloadData2() -> Void {
         getDate2()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            OYCountDownManager.sharedManager.reload()
+            OYCountDownManager_swift.sharedManager.reload()
             self.tableView2.reloadData()
             self.tableView2.refreshControl?.endRefreshing()
         }
     }
     
     deinit {
-        OYCountDownManager.sharedManager.invalidate()
-        OYCountDownManager.sharedManager.reload()
+        OYCountDownManager_swift.sharedManager.invalidate()
+        OYCountDownManager_swift.sharedManager.reload()
     }
 
 }

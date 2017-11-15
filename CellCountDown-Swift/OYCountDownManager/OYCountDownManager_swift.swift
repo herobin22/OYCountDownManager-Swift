@@ -11,10 +11,10 @@ import UIKit
 /** 通知名 */
 let OYCountDownNotification = Notification.Name("OYCountDownNotification")
 
-class OYCountDownManager: NSObject {
+class OYCountDownManager_swift: NSObject {
     
     /** 使用单例 */
-    static let sharedManager: OYCountDownManager = OYCountDownManager()
+    static let sharedManager: OYCountDownManager_swift = OYCountDownManager_swift()
     
     override init() {
         super.init()

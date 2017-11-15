@@ -23,7 +23,7 @@
 		6A8A6FEF1FBAC7430042B1AA /* OYMultiplePageOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A6FEE1FBAC7430042B1AA /* OYMultiplePageOneVC.swift */; };
 		6A8A6FF11FBAC87B0042B1AA /* OYMultiplePageTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A6FF01FBAC87B0042B1AA /* OYMultiplePageTwoVC.swift */; };
 		6A8A6FF31FBADDE30042B1AA /* OYPagingTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A6FF21FBADDE30042B1AA /* OYPagingTableVC.swift */; };
-		6A8A70151FBAE8500042B1AA /* OYCountDownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A70141FBAE8500042B1AA /* OYCountDownManager.swift */; };
+		6A8A70151FBAE8500042B1AA /* OYCountDownManager_swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A70141FBAE8500042B1AA /* OYCountDownManager_swift.swift */; };
 		9E2B1A65E5521227724C718B /* Pods_CellCountDown_SwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F897CD2758E1250634585143 /* Pods_CellCountDown_SwiftTests.framework */; };
 		E047CEE011A3DF6B35B9AA89 /* Pods_CellCountDown_SwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733C1EAF66ADB6229B079B84 /* Pods_CellCountDown_SwiftUITests.framework */; };
 /* End PBXBuildFile section */
@@ -70,7 +70,7 @@
 		6A8A6FF01FBAC87B0042B1AA /* OYMultiplePageTwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OYMultiplePageTwoVC.swift; sourceTree = "<group>"; };
 		6A8A6FF21FBADDE30042B1AA /* OYPagingTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OYPagingTableVC.swift; sourceTree = "<group>"; };
 		6A8A70121FBAE3870042B1AA /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
-		6A8A70141FBAE8500042B1AA /* OYCountDownManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYCountDownManager.swift; sourceTree = "<group>"; };
+		6A8A70141FBAE8500042B1AA /* OYCountDownManager_swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYCountDownManager_swift.swift; sourceTree = "<group>"; };
 		733C1EAF66ADB6229B079B84 /* Pods_CellCountDown_SwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CellCountDown_SwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E41F35D573CA831AF900175 /* Pods-CellCountDown-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CellCountDown-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-CellCountDown-Swift/Pods-CellCountDown-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		972B6A7BA0EEFF7F966C0F9A /* Pods_CellCountDown_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CellCountDown_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,7 +192,7 @@
 		6A8A70131FBAE8500042B1AA /* OYCountDownManager */ = {
 			isa = PBXGroup;
 			children = (
-				6A8A70141FBAE8500042B1AA /* OYCountDownManager.swift */,
+				6A8A70141FBAE8500042B1AA /* OYCountDownManager_swift.swift */,
 			);
 			path = OYCountDownManager;
 			sourceTree = "<group>";
@@ -498,7 +498,7 @@
 				6A8A6FEF1FBAC7430042B1AA /* OYMultiplePageOneVC.swift in Sources */,
 				6A8069341FB185040089986E /* ViewController.swift in Sources */,
 				6A48CE271FB1A8330047E511 /* OYTopViewController.swift in Sources */,
-				6A8A70151FBAE8500042B1AA /* OYCountDownManager.swift in Sources */,
+				6A8A70151FBAE8500042B1AA /* OYCountDownManager_swift.swift in Sources */,
 				6A48CE291FB1A95C0047E511 /* OYSingleTableVC.swift in Sources */,
 				6A8069321FB185040089986E /* AppDelegate.swift in Sources */,
 				6A8A6FF11FBAC87B0042B1AA /* OYMultiplePageTwoVC.swift in Sources */,
