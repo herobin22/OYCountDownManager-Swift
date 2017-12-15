@@ -11,7 +11,7 @@ import UIKit
 /** 通知名 */
 let OYCountDownNotification = Notification.Name("OYCountDownNotification")
 
-class OYCountDownManager: NSObject {
+public class OYCountDownManager: NSObject {
     
     /** 使用单例 */
     static let sharedManager: OYCountDownManager = OYCountDownManager()
@@ -24,7 +24,7 @@ class OYCountDownManager: NSObject {
     }
     
     /** 开始倒计时 */
-    func start() -> Void {
+    public func start() -> Void {
         // 启动定时器
         if self.timer == nil {
             self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
@@ -33,7 +33,7 @@ class OYCountDownManager: NSObject {
     }
     
     /** 停止倒计时 */
-    func invalidate() -> Void {
+    public func invalidate() -> Void {
         self.timer?.invalidate()
         self.timer = nil
     }
@@ -47,7 +47,7 @@ class OYCountDownManager: NSObject {
     var timeInterval: Int = 0
     
     /** 刷新倒计时(兼容旧版本, 如使用identifier标识的时间差, 请调用reloadAllSource方法) */
-    func reload() -> Void {
+    public func reload() -> Void {
         self.timeInterval = 0
     }
     
@@ -57,7 +57,7 @@ class OYCountDownManager: NSObject {
 
 
     /** 添加倒计时源 */
-    func addSourceWithIdentifier(identifier: String) -> Void {
+    public func addSourceWithIdentifier(identifier: String) -> Void {
         let timeInterval = self.timeIntervalDict[identifier]
         if timeInterval != nil {
             timeInterval?.timeInterval = 0
@@ -67,29 +67,29 @@ class OYCountDownManager: NSObject {
     }
     
     /** 获取时间差 */
-    func timeIntervalWithIdentifier(identifier: String) -> Int {
+    public func timeIntervalWithIdentifier(identifier: String) -> Int {
         return self.timeIntervalDict[identifier]?.timeInterval ?? 0
     }
     
     /** 刷新倒计时源 */
-    func reloadSourceWithIdentifier(identifier: String) -> Void {
+    public func reloadSourceWithIdentifier(identifier: String) -> Void {
         self.timeIntervalDict[identifier]?.timeInterval = 0
     }
     
     /** 刷新所有倒计时源 */
-    func reloadAllSource() -> Void {
+    public func reloadAllSource() -> Void {
         for (_, timeInterval) in self.timeIntervalDict {
             timeInterval.timeInterval = 0
         }
     }
     
     /** 清除倒计时源 */
-    func removeSourceWithIdentifier(identyfier: String) -> Void {
+    public func removeSourceWithIdentifier(identyfier: String) -> Void {
         self.timeIntervalDict.removeValue(forKey: identyfier)
     }
     
     /** 清除所有倒计时源 */
-    func removeAllSource(identifier: String) -> Void {
+    public func removeAllSource(identifier: String) -> Void {
         self.timeIntervalDict.removeAll()
     }
     

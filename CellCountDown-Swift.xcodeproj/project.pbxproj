@@ -53,7 +53,6 @@
 		6A48CE2A1FB1B08A0047E511 /* OYTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OYTableViewCell.swift; sourceTree = "<group>"; };
 		6A48CE2C1FB1B0970047E511 /* OYModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OYModel.swift; sourceTree = "<group>"; };
 		6A7A0DAC1FE3A6270056DD6F /* OYCountDownManager_Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYCountDownManager_Swift.swift; sourceTree = "<group>"; };
-		6A7A0DB01FE3B35D0056DD6F /* OYCountDownManager_Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OYCountDownManager_Swift.h; sourceTree = "<group>"; };
 		6A80692E1FB185040089986E /* CellCountDown-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CellCountDown-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8069311FB185040089986E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A8069331FB185040089986E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,7 +137,6 @@
 			isa = PBXGroup;
 			children = (
 				6A7A0DAC1FE3A6270056DD6F /* OYCountDownManager_Swift.swift */,
-				6A7A0DB01FE3B35D0056DD6F /* OYCountDownManager_Swift.h */,
 			);
 			path = OYCountDownManager;
 			sourceTree = "<group>";
