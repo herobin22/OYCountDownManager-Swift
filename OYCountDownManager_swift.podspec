@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-s.name        = 'OYCountDownManager_Swift'
+s.name        = 'OYCountDownManager_swift'
 s.version     = '2.0.2'
 s.authors     = { 'herob' => '869765745@qq.com' }
 s.homepage    = 'https://github.com/herobin22/OYCountDownManager-Swift'
