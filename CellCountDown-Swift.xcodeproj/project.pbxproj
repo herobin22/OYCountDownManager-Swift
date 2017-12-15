@@ -12,7 +12,7 @@
 		6A48CE291FB1A95C0047E511 /* OYSingleTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A48CE281FB1A95C0047E511 /* OYSingleTableVC.swift */; };
 		6A48CE2B1FB1B08A0047E511 /* OYTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A48CE2A1FB1B08A0047E511 /* OYTableViewCell.swift */; };
 		6A48CE2D1FB1B0970047E511 /* OYModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A48CE2C1FB1B0970047E511 /* OYModel.swift */; };
-		6A7A0DAD1FE3A6270056DD6F /* OYCountDownManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A0DAC1FE3A6270056DD6F /* OYCountDownManager.swift */; };
+		6A7A0DAD1FE3A6270056DD6F /* OYCountDownManager_Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A0DAC1FE3A6270056DD6F /* OYCountDownManager_Swift.swift */; };
 		6A8069321FB185040089986E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8069311FB185040089986E /* AppDelegate.swift */; };
 		6A8069341FB185040089986E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8069331FB185040089986E /* ViewController.swift */; };
 		6A8069371FB185040089986E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A8069351FB185040089986E /* Main.storyboard */; };
@@ -52,7 +52,7 @@
 		6A48CE281FB1A95C0047E511 /* OYSingleTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OYSingleTableVC.swift; sourceTree = "<group>"; };
 		6A48CE2A1FB1B08A0047E511 /* OYTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OYTableViewCell.swift; sourceTree = "<group>"; };
 		6A48CE2C1FB1B0970047E511 /* OYModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OYModel.swift; sourceTree = "<group>"; };
-		6A7A0DAC1FE3A6270056DD6F /* OYCountDownManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYCountDownManager.swift; sourceTree = "<group>"; };
+		6A7A0DAC1FE3A6270056DD6F /* OYCountDownManager_Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OYCountDownManager_Swift.swift; sourceTree = "<group>"; };
 		6A80692E1FB185040089986E /* CellCountDown-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CellCountDown-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8069311FB185040089986E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A8069331FB185040089986E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,7 +136,7 @@
 		6A7A0DAB1FE3A6270056DD6F /* OYCountDownManager */ = {
 			isa = PBXGroup;
 			children = (
-				6A7A0DAC1FE3A6270056DD6F /* OYCountDownManager.swift */,
+				6A7A0DAC1FE3A6270056DD6F /* OYCountDownManager_Swift.swift */,
 			);
 			path = OYCountDownManager;
 			sourceTree = "<group>";
@@ -498,7 +498,7 @@
 				6A8A6FEF1FBAC7430042B1AA /* OYMultiplePageOneVC.swift in Sources */,
 				6A8069341FB185040089986E /* ViewController.swift in Sources */,
 				6A48CE271FB1A8330047E511 /* OYTopViewController.swift in Sources */,
-				6A7A0DAD1FE3A6270056DD6F /* OYCountDownManager.swift in Sources */,
+				6A7A0DAD1FE3A6270056DD6F /* OYCountDownManager_Swift.swift in Sources */,
 				6A48CE291FB1A95C0047E511 /* OYSingleTableVC.swift in Sources */,
 				6A8069321FB185040089986E /* AppDelegate.swift in Sources */,
 				6A8A6FF11FBAC87B0042B1AA /* OYMultiplePageTwoVC.swift in Sources */,
