@@ -14,7 +14,7 @@ let OYCountDownNotification = Notification.Name("OYCountDownNotification")
 public class OYCountDownManager: NSObject {
     
     /** 使用单例 */
-    static let sharedManager: OYCountDownManager = OYCountDownManager()
+    public static let sharedManager: OYCountDownManager = OYCountDownManager()
     
     override init() {
         super.init()
