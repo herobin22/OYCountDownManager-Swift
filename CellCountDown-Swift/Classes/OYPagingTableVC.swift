@@ -28,7 +28,7 @@ class OYPagingTableVC: UIViewController {
 
         
         // 启动倒计时管理
-        OYCountDownManager_swift.sharedManager.start()
+        OYCountDownManager.sharedManager.start()
     }
     
     private func setupUI() {
@@ -75,17 +75,17 @@ class OYPagingTableVC: UIViewController {
             dataSource.append(model)
         }
         // 增加倒计时源
-        OYCountDownManager_swift.sharedManager.addSourceWithIdentifier(identifier: "OYPagingSource" + "\(pageNumber)")
+        OYCountDownManager.sharedManager.addSourceWithIdentifier(identifier: "OYPagingSource" + "\(pageNumber)")
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            OYCountDownManager_swift.sharedManager.reload()
+            OYCountDownManager.sharedManager.reload()
             self.tableView.reloadData()
             self.endRefreshing()
         }
     }
     
     deinit {
-        OYCountDownManager_swift.sharedManager.invalidate()
-        OYCountDownManager_swift.sharedManager.reload()
+        OYCountDownManager.sharedManager.invalidate()
+        OYCountDownManager.sharedManager.reload()
     }
 }
 

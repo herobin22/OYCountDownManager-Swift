@@ -24,9 +24,9 @@ class OYMultiplePageTwoVC: UIViewController {
         self.setupUI()
         
         // 启动倒计时管理
-        OYCountDownManager_swift.sharedManager.start()
+        OYCountDownManager.sharedManager.start()
         // 增加倒计时源
-        OYCountDownManager_swift.sharedManager.addSourceWithIdentifier(identifier: OYMultiplePageSource2)
+        OYCountDownManager.sharedManager.addSourceWithIdentifier(identifier: OYMultiplePageSource2)
     }
     
     private func setupUI() {
@@ -51,15 +51,15 @@ class OYMultiplePageTwoVC: UIViewController {
     @objc private func reloadData() -> Void {
         getDate()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            OYCountDownManager_swift.sharedManager.reload()
+            OYCountDownManager.sharedManager.reload()
             self.tableView.reloadData()
             self.tableView.refreshControl?.endRefreshing()
         }
     }
     
     deinit {
-        OYCountDownManager_swift.sharedManager.invalidate()
-        OYCountDownManager_swift.sharedManager.reload()
+        OYCountDownManager.sharedManager.invalidate()
+        OYCountDownManager.sharedManager.reload()
     }
 }
 
