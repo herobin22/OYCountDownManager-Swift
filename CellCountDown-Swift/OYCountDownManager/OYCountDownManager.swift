@@ -89,7 +89,7 @@ public class OYCountDownManager: NSObject {
     }
     
     /** 清除所有倒计时源 */
-    public func removeAllSource(identifier: String) -> Void {
+    public func removeAllSource() -> Void {
         self.timeIntervalDict.removeAll()
     }
     
@@ -102,9 +102,9 @@ public class OYCountDownManager: NSObject {
         return lazyDict
     }()
     
-    /// 后台模式使用, 记录进入后台的本地时间
+    /// 后台模式使用, 记录进入后台的绝对时间
     private var backgroudRecord: Bool = false
-    private var lastData: Date?
+    private var lastTime: CFAbsoluteTime = 0
     
     /// 定时器回调
     @objc private func timerAction() -> Void {
@@ -125,7 +125,7 @@ public class OYCountDownManager: NSObject {
     @objc private func applicationDidEnterBackground() -> Void {
         self.backgroudRecord = (self.timer != nil)
         if self.backgroudRecord {
-            self.lastData = Date()
+            self.lastTime = CFAbsoluteTimeGetCurrent()
             self.invalidate()
         }
     }
@@ -133,7 +133,7 @@ public class OYCountDownManager: NSObject {
     /// 程序进入前台回调
     @objc private func applicationWillEnterForeground() -> Void {
         if self.backgroudRecord {
-            let timeInterval = Date().timeIntervalSince(self.lastData!)
+            let timeInterval = CFAbsoluteTimeGetCurrent() - self.lastTime
             // 取整
             self.timerActionWithTimeInterval(interval: Int(timeInterval))
             self.start()

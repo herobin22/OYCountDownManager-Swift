@@ -84,8 +84,8 @@ class OYPagingTableVC: UIViewController {
     }
     
     deinit {
+        OYCountDownManager.sharedManager.removeAllSource()
         OYCountDownManager.sharedManager.invalidate()
-        OYCountDownManager.sharedManager.reload()
     }
 }
 

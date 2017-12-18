@@ -64,7 +64,7 @@ class OYMultipleTableVC: UIViewController {
     @objc private func reloadData() -> Void {
         getDate()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            OYCountDownManager.sharedManager.reload()
+            OYCountDownManager.sharedManager.reloadSourceWithIdentifier(identifier: OYMultipleTableSource1)
             self.tableView.reloadData()
             self.tableView.refreshControl?.endRefreshing()
         }
@@ -82,15 +82,15 @@ class OYMultipleTableVC: UIViewController {
     @objc private func reloadData2() -> Void {
         getDate2()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            OYCountDownManager.sharedManager.reload()
+            OYCountDownManager.sharedManager.reloadSourceWithIdentifier(identifier: OYMultipleTableSource2)
             self.tableView2.reloadData()
             self.tableView2.refreshControl?.endRefreshing()
         }
     }
     
     deinit {
+        OYCountDownManager.sharedManager.removeAllSource()
         OYCountDownManager.sharedManager.invalidate()
-        OYCountDownManager.sharedManager.reload()
     }
 
 }

@@ -58,8 +58,8 @@ class OYMultiplePageOneVC: UIViewController {
     }
     
     deinit {
+        OYCountDownManager.sharedManager.removeSourceWithIdentifier(identyfier: OYMultiplePageSource1)
         OYCountDownManager.sharedManager.invalidate()
-        OYCountDownManager.sharedManager.reload()
     }
 }
 
