@@ -9,7 +9,9 @@
 import UIKit
 
 /** 通知名 */
-let OYCountDownNotification = Notification.Name("OYCountDownNotification")
+extension NSNotification.Name {
+    public static let OYCountDownNotification = Notification.Name("OYCountDownNotification")
+}
 
 public class OYCountDownManager: NSObject {
     
@@ -19,23 +21,23 @@ public class OYCountDownManager: NSObject {
     override init() {
         super.init()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(applicationDidEnterBackground), name: Notification.Name.UIApplicationDidEnterBackground, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(applicationWillEnterForeground), name: Notification.Name.UIApplicationWillEnterForeground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationDidEnterBackground), name: .UIApplicationDidEnterBackground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(applicationWillEnterForeground), name: .UIApplicationWillEnterForeground, object: nil)
     }
     
     /** 开始倒计时 */
     public func start() -> Void {
         // 启动定时器
-        if self.timer == nil {
-            self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
-            RunLoop.current.add(self.timer!, forMode: .commonModes)
+        if timer == nil {
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
+            RunLoop.current.add(timer!, forMode: .commonModes)
         }
     }
     
     /** 停止倒计时 */
     public func invalidate() -> Void {
-        self.timer?.invalidate()
-        self.timer = nil
+        timer?.invalidate()
+        timer = nil
     }
     
     
@@ -48,7 +50,7 @@ public class OYCountDownManager: NSObject {
     
     /** 刷新倒计时(兼容旧版本, 如使用identifier标识的时间差, 请调用reloadAllSource方法) */
     public func reload() -> Void {
-        self.timeInterval = 0
+        timeInterval = 0
     }
     
 
@@ -58,39 +60,39 @@ public class OYCountDownManager: NSObject {
 
     /** 添加倒计时源 */
     public func addSourceWithIdentifier(identifier: String) -> Void {
-        let timeInterval = self.timeIntervalDict[identifier]
+        let timeInterval = timeIntervalDict[identifier]
         if timeInterval != nil {
             timeInterval?.timeInterval = 0
         }else {
-            self.timeIntervalDict[identifier] = OYTimeInterval(timerInterval: 0)
+            timeIntervalDict[identifier] = OYTimeInterval(timerInterval: 0)
         }
     }
     
     /** 获取时间差 */
     public func timeIntervalWithIdentifier(identifier: String) -> Int {
-        return self.timeIntervalDict[identifier]?.timeInterval ?? 0
+        return timeIntervalDict[identifier]?.timeInterval ?? 0
     }
     
     /** 刷新倒计时源 */
     public func reloadSourceWithIdentifier(identifier: String) -> Void {
-        self.timeIntervalDict[identifier]?.timeInterval = 0
+        timeIntervalDict[identifier]?.timeInterval = 0
     }
     
     /** 刷新所有倒计时源 */
     public func reloadAllSource() -> Void {
-        for (_, timeInterval) in self.timeIntervalDict {
+        for (_, timeInterval) in timeIntervalDict {
             timeInterval.timeInterval = 0
         }
     }
     
     /** 清除倒计时源 */
     public func removeSourceWithIdentifier(identyfier: String) -> Void {
-        self.timeIntervalDict.removeValue(forKey: identyfier)
+        timeIntervalDict.removeValue(forKey: identyfier)
     }
     
     /** 清除所有倒计时源 */
     public func removeAllSource() -> Void {
-        self.timeIntervalDict.removeAll()
+        timeIntervalDict.removeAll()
     }
     
     /// 定时器
@@ -109,34 +111,34 @@ public class OYCountDownManager: NSObject {
     /// 定时器回调
     @objc private func timerAction() -> Void {
         // 定时器计数每次加1
-        self.timerActionWithTimeInterval(interval: 1)
+        timerActionWithTimeInterval(interval: 1)
     }
     private func timerActionWithTimeInterval(interval: Int) -> Void {
         // 时间差+
-        self.timeInterval += interval
-        for (_, timeInterval) in self.timeIntervalDict {
+        timeInterval += interval
+        for (_, timeInterval) in timeIntervalDict {
             timeInterval.timeInterval += interval
         }
         // 发出通知
-        NotificationCenter.default.post(name: OYCountDownNotification, object: nil)
+        NotificationCenter.default.post(name: .OYCountDownNotification, object: nil)
     }
     
     /// 程序进入后台回调
     @objc private func applicationDidEnterBackground() -> Void {
-        self.backgroudRecord = (self.timer != nil)
-        if self.backgroudRecord {
-            self.lastTime = CFAbsoluteTimeGetCurrent()
-            self.invalidate()
+        backgroudRecord = (timer != nil)
+        if backgroudRecord {
+            lastTime = CFAbsoluteTimeGetCurrent()
+            invalidate()
         }
     }
     
     /// 程序进入前台回调
     @objc private func applicationWillEnterForeground() -> Void {
-        if self.backgroudRecord {
-            let timeInterval = CFAbsoluteTimeGetCurrent() - self.lastTime
+        if backgroudRecord {
+            let timeInterval = CFAbsoluteTimeGetCurrent() - lastTime
             // 取整
-            self.timerActionWithTimeInterval(interval: Int(timeInterval))
-            self.start()
+            timerActionWithTimeInterval(interval: Int(timeInterval))
+            start()
         }
     }
 }
@@ -147,6 +149,6 @@ class OYTimeInterval: NSObject {
     var timeInterval: Int = 0
     
     init(timerInterval: Int) {
-        self.timeInterval = timerInterval
+        timeInterval = timerInterval
     }
 }

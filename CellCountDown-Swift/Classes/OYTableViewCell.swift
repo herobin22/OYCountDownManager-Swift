@@ -24,12 +24,12 @@ class OYTableViewCell: UITableViewCell {
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: .value1, reuseIdentifier: reuseIdentifier)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(self.countDownNotification), name: OYCountDownNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.countDownNotification), name: .OYCountDownNotification, object: nil)
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(self.countDownNotification), name: OYCountDownNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.countDownNotification), name: .OYCountDownNotification, object: nil)
     }
     
     @objc private func countDownNotification() {
